@@ -1,6 +1,6 @@
 document.getElementById("recomendacion").addEventListener("click", ()=>{
     const contenedorResultado = document.getElementById("resultado-busqueda");
-    fetch("./recomendaciones.json")
+    fetch("./recomendaciones.JSON")
     .then(res=> res.json())
     .then(canciones => {
         canciones.forEach(({titulo, duracion, cantante, banda}) => {
